@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitGram Study - Subscription-based Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><i class="fas fa-book-reader"></i> LitGram Study</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#study-guides" id="studyGuidesLink" style="display: none;">Study Guides</a></li>
+                </ul>
+            </nav>
+            <button id="loginBtn" class="btn btn-secondary">Login</button>
+            <button id="logoutBtn" class="btn btn-secondary" style="display: none;">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Unlock Your Learning Potential</h1>
+                <p>Join LitGram Study for personalized learning experiences and expert-curated study guides.</p>
+                <button id="ctaButton" class="btn btn-primary">Get Started</button>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Why Choose LitGram Study?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-brain fa-3x"></i>
+                        <h3>Personalized Learning</h3>
+                        <p>Tailored study plans to match your unique learning style and goals.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals and experienced educators.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3>Study Anywhere</h3>
+                        <p>Access your study materials on any device, anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2>Choose Your Plan</h2>
+                <div class="pricing-plans">
+                    <div class="plan">
+                        <i class="fas fa-seedling fa-3x"></i>
+                        <h3>Basic</h3>
+                        <p class="price">$9.99/month</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to basic study guides</li>
+                            <li><i class="fas fa-check"></i> Limited personalized learning</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                    </div>
+                    <div class="plan">
+                        <i class="fas fa-tree fa-3x"></i>
+                        <h3>Pro</h3>
+                        <p class="price">$19.99/month</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to all study guides</li>
+                            <li><i class="fas fa-check"></i> Full personalized learning</li>
+                            <li><i class="fas fa-check"></i> Priority email support</li>
+                            <li><i class="fas fa-check"></i> Monthly webinars</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                    </div>
+                    <div class="plan">
+                        <i class="fas fa-gem fa-3x"></i>
+                        <h3>Premium</h3>
+                        <p class="price">$29.99/month</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Pro plan</li>
+                            <li><i class="fas fa-check"></i> One-on-one tutoring sessions</li>
+                            <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                            <li><i class="fas fa-check"></i> Exclusive study materials</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Student 1" class="testimonial-img">
+                        <p>"LitGram Study has transformed my learning experience. The personalized approach really works!"</p>
+                        <p class="testimonial-name">- Sarah J.</p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Student 2" class="testimonial-img">
+                        <p>"The expert instructors and comprehensive study guides have helped me ace my exams."</p>
+                        <p class="testimonial-name">- Mike T.</p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Student 3" class="testimonial-img">
+                        <p>"Studying on-the-go has never been easier. I love the mobile accessibility of LitGram Study!"</p>
+                        <p class="testimonial-name">- Emily R.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="study-guides" style="display: none;">
+            <div class="container">
+                <h2>Study Guides</h2>
+                <div id="studyGuidesList"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>LitGram Study is dedicated to providing personalized learning experiences for students worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2023 LitGram Study. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

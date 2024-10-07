@@ -1,0 +1,54 @@
+/* Add these styles to your existing CSS */
+
+#signup-page {
+    padding: 40px 0;
+}
+
+#signup-page .container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#signupForm .form-group {
+    margin-bottom: 20px;
+}
+
+#signupForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#signupForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#signupForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signupForm button:hover {
+    opacity: 0.9;
+}
+
+#signup-message {
+    margin-top: 20px;
+}
+
+#signup-message .success {
+    color: green;
+}
+
+#signup-message .error {
+    color: red;
+}
+
+/* Existing styles... */

@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-starter",
+  "version": "1.0.0",
+  "description": "A starter project for Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "mkdir -p dist && cp -R public/* dist/ && cp server.js dist/"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
